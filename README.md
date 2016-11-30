@@ -2,7 +2,7 @@
 
 ##Synopsis
 
-The following game is called "Memory Game." There are a total of 20 cards, which consists of 10 pairs. The game is meant for two players to compete against each other to determine who has the best visual memory.
+The following game is called "Memory Game."  The game is meant for two players to compete against each other to determine who has the best visual memory. There are a total of 20 cards, which consists of 10 pairs. The game starts with all of the cards facing down. When you consecutively click on two identical cards, those cards will remain face up. However, if the two cards you click are not identical, they will remain face down and the player will have to start from scratch.
 
 ##Code Example
 
