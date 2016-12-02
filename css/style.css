@@ -4,7 +4,7 @@
 
 body {
   background: url(./background.png);
-  background-size: 1300px 500px;
+  background-size: 1300px 800px;
   background-repeat: no-repeat;
 }
 
@@ -34,7 +34,9 @@ h4 {
   clear:left;
 }
 
-
+button {
+  background-color: red;
+}
 
 p {
   color: magenta;
@@ -48,7 +50,8 @@ p {
   height: 80px;
   border: 10px solid #000;
   float: left;
-  background: green;
+  background: url(./card_background.png)
+
 }
 
 .face {

@@ -6,13 +6,36 @@ var pick2 = null
 // all of our cards:
 var deck = ['Lion Picture', 'Lion Picture', 'Gorilla Picture', 'Gorilla Picture', 'Elephant Picture', 'Elephant Picture', 'Tiger Picture', 'Tiger Picture', 'Hippo Picture', 'Hippo Picture', 'Eagle Picture', 'Eagle Picture', 'Zebra Picture', 'Zebra Picture', 'Cheetah Picture', 'Cheetah Picture', 'Rhino Picture', 'Rhino Picture', 'Jaguar Picture', 'Jaguar Picture']
 
+var btn = document.createElement("button");
 
+var t = document.createTextNode("Start Game");
+btn.appendChild(t);                                // Append the text to <button>
+document.body.appendChild(btn);
+
+//(Event listener??)
 // we'll eventually shuffle here...
 //////////
 
+//Shuffle the deck
+function shuffle(deck) {
+  var m = deck.length, t, i;
+  // While there remain elements to shuffle…
+  while (m) {
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
+    // And swap it with the current element.
+    t = deck[m];
+    deck[m] = deck[i];
+    deck[i] = t;
+  }
+  return deck;
+}
+
+
+
 // deal the cards:
 for(var i = 0; i < deck.length; i += 1) {
-  $container.append('<div class="card"><div class="face">' + deck[i] + '</div></div>')
+  $container.append('<div class="card"><div class="face">' + shuffle(deck)[i] + '</div></div>')
 }
 //collection of '.face' divs that we already
 var $faces = $(".face")
@@ -61,9 +84,9 @@ function startrtTimeFunction () {
 //
 // }, 1000);
 
-setInterval(function () {
-console.log('hey');
-}, 1000);
+// setInterval(function () {
+// console.log('hey');
+// }, 1000);
 
 // var timer = setInterval(function, 1000);
 
