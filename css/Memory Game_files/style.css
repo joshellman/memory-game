@@ -9,34 +9,9 @@ body {
 }
 
 h1 {
-  color: Orange;
+  color: yellow;
   text-align: center;
   font-family: Courier;
-  font-size: 50px;
-  text-shadow: gold 2px 5px;
-}
-
-h2 {
-color: magenta;
-font family: courier;
-text-align: center;
-font-weight: bold;
-text-shadow: lime 2px 3px;
-}
-
-h4 {
-  font-family: helvetica;
-  color: yellow;
-  clear:left;
-}
-
-
-
-p {
-  color: magenta;
-  font-family: Courier;
-  align: left;
-  font-weight: bold;;
 }
 
 .card {

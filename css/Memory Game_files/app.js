@@ -4,7 +4,7 @@ var pick1 = null
 var pick2 = null
 
 // all of our cards:
-var deck = ['Lion Picture', 'Lion Picture', 'Gorilla Picture', 'Gorilla Picture', 'Elephant Picture', 'Elephant Picture', 'Tiger Picture', 'Tiger Picture', 'Hippo Picture', 'Hippo Picture', 'Eagle Picture', 'Eagle Picture', 'Zebra Picture', 'Zebra Picture', 'Cheetah Picture', 'Cheetah Picture', 'Rhino Picture', 'Rhino Picture', 'Jaguar Picture', 'Jaguar Picture']
+var deck = ['a', 'a', 'b', 'b', 'c', 'c', 'd', 'd', 'e', 'e', 'f', 'f', 'g', 'g', 'h', 'h', 'i', 'i', 'j', 'j']
 
 
 // we'll eventually shuffle here...
@@ -38,7 +38,7 @@ $faces.on('click', function(){
         pick2.animate({opacity: 0})
         pick1 = null
         pick2 = null
-      }, 1000)
+      }, 3000)
 
     }
 
