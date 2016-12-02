@@ -61,7 +61,7 @@ $faces.on('click', function(){
         pick2.animate({opacity: 0})
         pick1 = null
         pick2 = null
-      }, 1000)
+      }, 500)
 
     }
 

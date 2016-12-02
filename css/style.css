@@ -50,7 +50,9 @@ p {
   height: 80px;
   border: 10px solid #000;
   float: left;
-  background: url(./card_background.png)
+  background: url(./back_card.png);
+  background-size: 61px 81px;
+  background-repeat: no-repeat;
 
 }
 
