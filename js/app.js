@@ -135,7 +135,7 @@ $(startButton).on('click', function() {
   },1000);
   setTimeout(function() {
     $faces.animate({opacity: 0});
-  },7000)
+  },5000)
 
   setTimeout(function() {
     Timer = setInterval(function() {
@@ -144,7 +144,7 @@ $(startButton).on('click', function() {
         $timer.text(player1Time)
       // }
     },1000);
-  }, 7000);
+  }, 5000);
 });
 
 // function startrtTimeFunction () {
@@ -178,7 +178,7 @@ function checkMatches() {
   if (game.currentPlayer.matches == 10) {
     game.currentPlayer.score = $('#timer').html();
     clearInterval(Timer)
-    alert("found all matches")
+    alert("You found all matches!")
     switchPlayer();
     $('#timer').text(0)
   }
