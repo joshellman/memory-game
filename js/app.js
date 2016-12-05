@@ -175,7 +175,7 @@ $(startButton).on('click', function() {
 
 
 function checkMatches() {
-  if (game.currentPlayer.matches == 2) {
+  if (game.currentPlayer.matches == 10) {
     game.currentPlayer.score = $('#timer').html();
     clearInterval(Timer)
     alert("found all matches")
@@ -183,4 +183,6 @@ function checkMatches() {
     $('#timer').text(0)
   }
 }
-$('h1').text(game.currentPlayer.score)
+// $('h1').text(    game.currentPlayer.score)
+
+//

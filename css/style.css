@@ -42,6 +42,7 @@ h4 {
 
 button {
   background-color: red;
+  font-weight: bold;
   position: relative;
   top: -451px;
   left: 563px;
