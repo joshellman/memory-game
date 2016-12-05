@@ -9,19 +9,20 @@ body {
 }
 
 #timer {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 h1 {
   color: Orange;
   text-align: center;
   font-family: Courier;
-  font-size: 50px;
-  text-shadow: gold 2px 5px;
+  font-size: 65px;
+  text-shadow: red 2px 5px;
 }
 
 h2 {
-color: magenta;
+color: red;
+font-size: 35px;
 font family: courier;
 text-align: center;
 font-weight: bold;
@@ -40,6 +41,9 @@ h4 {
 
 button {
   background-color: red;
+  position: relative;
+  top: -452px;
+  left: 530px;
 }
 
 p {
