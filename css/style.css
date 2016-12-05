@@ -30,7 +30,8 @@ text-shadow: lime 2px 3px;
 }
 
 h3 {
-  color: magenta;
+  color: Red;
+  text-shadow: lime 1px 2px;
 }
 
 h4 {
@@ -42,9 +43,10 @@ h4 {
 button {
   background-color: red;
   position: relative;
-  top: -452px;
-  left: 530px;
+  top: -451px;
+  left: 563px;
 }
+
 
 p {
   color: magenta;
@@ -52,6 +54,7 @@ p {
   align: left;
   font-weight: bold;;
 }
+
 
 .card {
   width: 60px;
