@@ -4,7 +4,7 @@ var pick1 = null
 var pick2 = null
 
 // all of our cards:
-var deck = ['<img src="css/lion.png" />', 'Lion Picture', 'Gorilla Picture', 'Gorilla Picture', 'Elephant Picture', 'Elephant Picture', 'Tiger Picture', 'Tiger Picture', 'Hippo Picture', 'Hippo Picture', 'Eagle Picture', 'Eagle Picture', 'Zebra Picture', 'Zebra Picture', 'Cheetah Picture', 'Cheetah Picture', 'Rhino Picture', 'Rhino Picture', 'Jaguar Picture', 'Jaguar Picture']
+var deck = ['<img src="css/lion.png" />', '<img src="css/lion.png" />', '<img src="css/gorilla.png" />', '<img src="css/gorilla.png" />', '<img src="css/elephant.png" />', '<img src="css/elephant.png" />', '<img src="css/tiger.png" />', '<img src="css/tiger.png" />', '<img src="css/hippo.png" />', '<img src="css/hippo.png" />' , '<img src="css/wolf.png" />', '<img src="css/wolf.png" />', '<img src="css/zebra.png" />', '<img src="css/zebra.png" />', '<img src="css/cheetah.png" />', '<img src="css/cheetah.png" />', '<img src="css/rhino.png" />', '<img src="css/rhino.png" />', '<img src="css/jaguar.png" />', '<img src="css/jaguar.png" />']
 
 var startButton = document.createElement("button");
 
