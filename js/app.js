@@ -1,18 +1,19 @@
 var $container = $('#container')
-
+var $timer = $('#timer')
 var pick1 = null
 var pick2 = null
 
 // all of our cards:
-var deck = ['Lion Picture', 'Lion Picture', 'Gorilla Picture', 'Gorilla Picture', 'Elephant Picture', 'Elephant Picture', 'Tiger Picture', 'Tiger Picture', 'Hippo Picture', 'Hippo Picture', 'Eagle Picture', 'Eagle Picture', 'Zebra Picture', 'Zebra Picture', 'Cheetah Picture', 'Cheetah Picture', 'Rhino Picture', 'Rhino Picture', 'Jaguar Picture', 'Jaguar Picture']
+var deck = ['<img src="css/lion.png" />', 'Lion Picture', 'Gorilla Picture', 'Gorilla Picture', 'Elephant Picture', 'Elephant Picture', 'Tiger Picture', 'Tiger Picture', 'Hippo Picture', 'Hippo Picture', 'Eagle Picture', 'Eagle Picture', 'Zebra Picture', 'Zebra Picture', 'Cheetah Picture', 'Cheetah Picture', 'Rhino Picture', 'Rhino Picture', 'Jaguar Picture', 'Jaguar Picture']
 
-var btn = document.createElement("button");
+var startButton = document.createElement("button");
 
-var t = document.createTextNode("Start Game");
-btn.appendChild(t);                                // Append the text to <button>
-document.body.appendChild(btn);
+var txt = document.createTextNode("Start Game");
+startButton.appendChild(txt);                                // Append the text to <button>
+document.body.appendChild(startButton);
 
-//(Event listener??)
+
+
 // we'll eventually shuffle here...
 //////////
 
@@ -32,10 +33,10 @@ function shuffle(deck) {
 }
 
 
-
+shuffle(deck)
 // deal the cards:
 for(var i = 0; i < deck.length; i += 1) {
-  $container.append('<div class="card"><div class="face">' + shuffle(deck)[i] + '</div></div>')
+  $container.append('<div class="card"><div class="face">' + deck[i] + '</div></div>')
 }
 //collection of '.face' divs that we already
 var $faces = $(".face")
@@ -76,17 +77,30 @@ $faces.on('click', function(){
   console.log($(this).text())
 })
 
+$(startButton).on('click', function() {
+  showCards = setTimeout(function() {
+    $('.face').animate({opacity: 1});
+  },1000);
+  setTimeout(function() {
+    $('.face').fadeOut();
+  },7000)
 
-function startrtTimeFunction () {
-  setInterval
-}
+  setTimeout(function() {
+    setInterval(function() {
+      if($timer.html() > 0) {
+        $timer.text($timer.html() -1)
+      }
+    },1000);
+  }, 7000);
+});
+
+// function startrtTimeFunction () {
+//   setInterval
+// }
 // setTimeout(function () {
 //
 // }, 1000);
 
-// setInterval(function () {
-// console.log('hey');
-// }, 1000);
 
 // var timer = setInterval(function, 1000);
 

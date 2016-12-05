@@ -1,11 +1,15 @@
-/* style */
+  /* style */
 
 
 
 body {
-  background: url(./background.png);
+  background: url(../images/background.png);
   background-size: 1300px 800px;
   background-repeat: no-repeat;
+}
+
+#timer {
+  font-size: 70px;
 }
 
 h1 {
@@ -69,6 +73,7 @@ p {
   border: 10px solid #444;
   margin: auto;
 /* What is wrong below?*/
+
 
   /*background:url('./memory/african_background.png');
 }
