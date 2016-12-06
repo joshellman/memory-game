@@ -1,3 +1,4 @@
+// create variables for the game
 var $container = $('#container')
 var $timer = $('#timer')
 var pick1 = null
@@ -8,6 +9,7 @@ var $faces = null
 var deck = ['<img src="css/lion.png" />', '<img src="css/lion.png" />', '<img src="css/gorilla.png" />', '<img src="css/gorilla.png" />', '<img src="css/elephant.png" />', '<img src="css/elephant.png" />', '<img src="css/tiger.png" />', '<img src="css/tiger.png" />', '<img src="css/hippo.png" />', '<img src="css/hippo.png" />' , '<img src="css/wolf.png" />', '<img src="css/wolf.png" />', '<img src="css/zebra.png" />', '<img src="css/zebra.png" />', '<img src="css/cheetah.png" />', '<img src="css/cheetah.png" />', '<img src="css/rhino.png" />', '<img src="css/rhino.png" />', '<img src="css/jaguar.png" />'
 ,'<img src="css/jaguar.png" />']
 
+// create button and text inside the button
 var startButton = document.createElement("button");
 
 var txt = document.createTextNode("Player Start");
@@ -23,6 +25,7 @@ switchPlayer = function() {
     game.currentPlayer = game.player2
   }
 }
+// creates score to log results of each player
 var game = {
   player1: {
     name: "p1",
@@ -38,9 +41,7 @@ var game = {
 
 game.currentPlayer = game.player1
 
-// var txt = document.createTextNode("Player 2 Start");
-// startButton.appendChild(txt);
-//Shuffle the deck
+//Shuffle the deck and have cards randomly placed.
 function shuffle(deck) {
   var m = deck.length;
   var t;
@@ -91,7 +92,7 @@ function initializeGame() {
       } else {
         console.log("false")
 
-        // but either way: set pick1 and pick2 back to null at the end of this else
+        // but either way: pick1 and pick2 are set back to null at the end of this else statement
 
         setTimeout(function (){
           pick1.animate({opacity: 0})
@@ -113,7 +114,7 @@ function initializeGame() {
 }
 
 initializeGame()
-
+// click start button to flip cards for 5 seconds and begin the timer.
 $(startButton).on('click', function() {
   showCards = setTimeout(function() {
     $faces.animate({opacity: 1});
@@ -131,6 +132,33 @@ $(startButton).on('click', function() {
     },1000);
   }, 5000);
 });
+// log & alert when player gets all matches correctly. Then switch to next player.
+function checkMatches() {
+  if($('.matched').length == 20) {
+    console.log("")
+    clearInterval(Timer)
+    alert("You found all matches!")
+    $('#Player1').text("Player 1 Time: " +game.player1.time)
+
+    if(game.currentPlayer == game.player1) {
+      switchPlayer();
+    } else {
+      console.log("Game Over!")
+        $('#Player2').text("Player 2 Time: " +game.player2.time)
+// compare the scores
+      if(game.player1.time < game.player2.time) {
+        // player 1 wins
+        $('h1').text("Player 1 wins!")
+
+      } else {
+        // player 2 wins
+        $('h1').text("Player 2 wins!")
+      }
+    }
+    $('#timer').text(0)
+  }
+
+}
 
 
 // var timer = setInterval(function, 1000);
@@ -150,31 +178,3 @@ $(startButton).on('click', function() {
 //
 // mouseClicked = function() {
 // };
-
-
-function checkMatches() {
-  if($('.matched').length == 20) {
-    console.log("")
-    clearInterval(Timer)
-    alert("You found all matches!")
-    $('#Player1').text("Player 1 Time: " +game.player1.time)
-
-    if(game.currentPlayer == game.player1) {
-      switchPlayer();
-    } else {
-      console.log("Game Over!")
-        $('#Player2').text("Player 2 Time: " +game.player2.time)
-      // compare the scores
-      if(game.player1.time < game.player2.time) {
-        // player 1 wins
-        $('h1').text("Player 1 wins!")
-
-      } else {
-        // player 2 wins
-        $('h1').text("Player 2 wins!")
-      }
-    }
-    $('#timer').text(0)
-  }
-
-}
