@@ -14,7 +14,7 @@ var txt = document.createTextNode("Player Start");
 startButton.appendChild(txt);                                // Append the text to <button>
 document.body.appendChild(startButton);
 
-
+// switch player to player 2 if not current player
 switchPlayer = function() {
   if (game.currentPlayer == game.player2) {
     game.currentPlayer = game.player1
@@ -39,14 +39,7 @@ var game = {
 game.currentPlayer = game.player1
 
 // var txt = document.createTextNode("Player 2 Start");
-// startButton.appendChild(txt);                                // Append the text to <button>
-// document.body.appendChild(startButton);
-
-
-
-// we'll eventually shuffle here...
-//////////
-
+// startButton.appendChild(txt);
 //Shuffle the deck
 function shuffle(deck) {
   var m = deck.length;
@@ -71,7 +64,7 @@ function initializeGame() {
   for(var i = 0; i < deck.length; i += 1) {
     $container.append('<div class="card "><div class="face">' + deck[i] + '</div></div>')
   }
-  //collection of '.face' divs that we already
+  //collection of '.face' divs that we already have
   $faces = $(".face")
 
 
@@ -95,11 +88,10 @@ function initializeGame() {
 
         checkMatches()
 
-
-
-
-  } else {
+      } else {
         console.log("false")
+
+        // but either way: set pick1 and pick2 back to null at the end of this else
 
         setTimeout(function (){
           pick1.animate({opacity: 0})
@@ -110,9 +102,7 @@ function initializeGame() {
 
       }
 
-      // but either way: set pick1 and pick2 back to null at the end of this else
-
-    }
+      }
 
     // animate its transparency to '1'
     $(this).animate({opacity: 1})
@@ -141,13 +131,6 @@ $(startButton).on('click', function() {
     },1000);
   }, 5000);
 });
-
-// function startrtTimeFunction () {
-//   setInterval
-// }
-// setTimeout(function () {
-//
-// }, 1000);
 
 
 // var timer = setInterval(function, 1000);
@@ -195,6 +178,3 @@ function checkMatches() {
   }
 
 }
-// $('h1').text(    game.currentPlayer.score)
-
-//
