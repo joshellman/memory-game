@@ -1,8 +1,3 @@
-// Need to Switch turns between two players
-// Need to Design logic for winning & visually display which player won
-// 2 player start buttons ?
-
-
 var $container = $('#container')
 var $timer = $('#timer')
 var pick1 = null

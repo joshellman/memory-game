@@ -15,7 +15,7 @@ body {
 h1 {
   color: Orange;
   text-align: center;
-  font-family: Courier;
+  font-family: 'IM Fell DW Pica SC', serif;
   font-size: 65px;
   text-shadow: red 2px 5px;
 }
@@ -40,6 +40,7 @@ h3 {
 h4 {
   font-family: helvetica;
   color: yellow;
+
   font-style: italic;
   text-align: center;
 }
@@ -48,8 +49,8 @@ button {
   background-color: red;
   font-weight: bold;
   position: relative;
-  top: -451px;
-  left: 563px;
+  top: -452px;
+  left: 574px;
 }
 
 
