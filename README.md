@@ -38,3 +38,10 @@ Our project was to build a game using HTML, CSS, JavaScript/jQuery and felt a me
 ##Installation
 
 https://joshellman.github.io/memory-game/ to play the game directly from github page, or download a .zip of this repository and open the index.html inside of your browser.
+
+##Future Development
+
+* Clean up styling and make everything look neater and more presentable.
+* Create an instruction window that pops up and goes away when ready to begin playing.
+* Create a way for player to type in their name.
+* Maybe create a different way of scoring/timing the game.
