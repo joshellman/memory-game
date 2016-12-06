@@ -5,7 +5,7 @@ var pick1 = null
 var pick2 = null
 var $faces = null
 
-// all of our cards:
+// an array of images for all of the cards:
 var deck = ['<img src="css/lion.png" />', '<img src="css/lion.png" />', '<img src="css/gorilla.png" />', '<img src="css/gorilla.png" />', '<img src="css/elephant.png" />', '<img src="css/elephant.png" />', '<img src="css/tiger.png" />', '<img src="css/tiger.png" />', '<img src="css/hippo.png" />', '<img src="css/hippo.png" />' , '<img src="css/wolf.png" />', '<img src="css/wolf.png" />', '<img src="css/zebra.png" />', '<img src="css/zebra.png" />', '<img src="css/cheetah.png" />', '<img src="css/cheetah.png" />', '<img src="css/rhino.png" />', '<img src="css/rhino.png" />', '<img src="css/jaguar.png" />'
 ,'<img src="css/jaguar.png" />']
 
@@ -46,11 +46,11 @@ function shuffle(deck) {
   var m = deck.length;
   var t;
   var i;
-  // While there remain elements to shuffle…
+  // While there remain elements to shuffle
   while (m) {
     // Pick a remaining element…
     i = Math.floor(Math.random() * m--);
-    // And swap it with the current element.
+    // And swap it with the current element
     t = deck[m];
     deck[m] = deck[i];
     deck[i] = t;
