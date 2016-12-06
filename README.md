@@ -14,6 +14,23 @@ Technologies utilized: HTML / CSS / Javascript + jQuery
 
 The board was created using div IDs in HTML and placed using jQuery. Images were added to the face of the cards using an array in JavaScript. When the "start game" button is clicked, a for loop is ran causing the array to display in a random order. Using variables and functions in JavaScript and jQuery, matching pairs animate to remain face up while incorrect matches animate back to the card. A function is ran to alert the player when all 10 matching pairs are located, alongside with a timer then increases by 1 every 1000ms.
 
+##User Stories
+* As a user, when the board is first loaded to the screen all the card are on the board face down, with the timer set to 0.
+
+* As a user, I can click on "Player Start," which causes all of the cards to flip to their face for a total of 5 seconds. The face displays 10 pairs of animals.
+
+* As a user, I need to try and remember the order that the pairs were randomly generated on to the board.
+
+* As a user, if I get a correct match the pair of cards will remain face up. However, if I choose an incorrect match, the cards will remain facedown
+
+* As a user, when all 10 pairs are selected, the game will read "All matches found"
+
+* As a user, the time will display in Player 1 time.
+
+* As a user, another user clicks "Player Start" to follow the exact same process.
+
+* As a user, the user that was able to find the 10 pairs in the least amount of time will show up as the winner on the top of the screen.
+
 ##Motivation
 
 Our project was to build a game using HTML, CSS, JavaScript/jQuery and felt a memory game would be the perfect way to display this. I love wild animals and figured a wild animal safari game would be the perfect route for me to take.
