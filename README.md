@@ -1,4 +1,5 @@
 # Safari Memory Game
+![](https://github.com/joshellman/memory-game/blob/master/safari_screenshot.png)
 
 ##Link to Play Hosted Game
 https://joshellman.github.io/memory-game/
