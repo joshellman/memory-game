@@ -40,6 +40,8 @@ h3 {
 h4 {
   font-family: helvetica;
   color: yellow;
+  font-style: italic;
+  text-align: center;
 }
 
 button {
