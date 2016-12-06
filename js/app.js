@@ -17,7 +17,7 @@ var deck = ['<img src="css/lion.png" />', '<img src="css/lion.png" />', '<img sr
 
 var startButton = document.createElement("button");
 
-var txt = document.createTextNode("Player 1 Start");
+var txt = document.createTextNode("Player Start");
 startButton.appendChild(txt);                                // Append the text to <button>
 document.body.appendChild(startButton);
 

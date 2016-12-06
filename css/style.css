@@ -32,12 +32,14 @@ text-shadow: lime 2px 3px;
 h3 {
   color: Red;
   text-shadow: lime 1px 2px;
+  border: dotted 1.53px;
+    float: left;
+
 }
 
 h4 {
   font-family: helvetica;
   color: yellow;
-  clear:left;
 }
 
 button {

@@ -1,20 +1,22 @@
-# Memory Game
+# Safari Memory Game
 
-##Link to Hosted Game
+##Link to Play Hosted Game
 https://joshellman.github.io/memory-game/
 
 ##Synopsis
 
-The following game is called "Memory Game."  The game is meant for two players to compete against each other to determine who has the best visual memory. There are a total of 20 cards, which consists of 10 pairs. The game starts with all of the cards facing down. When you consecutively click on two identical cards, those cards will remain face up. However, if the two cards you click are not identical, they will remain face down and the player will have to start from scratch.
+The following game is called "Safari Memory Game."  The game is meant for two players to compete against each other to determine who has the best visual memory. There are 10 different pairs, which comes out to a total of 20 cards. The game starts with all of the cards facing down. When you consecutively click on two identical cards, those cards will remain face up. However, if the two cards you click are not identical, they will remain face down and the player will have to look for a pair of matching cards. The first to find all 10 matching pairs in the least amount of time is the winner.
 
-##Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+##Development process
+Technologies utilized: HTML / CSS / Javascript + jQuery
+
+The board was created using div IDs in HTML and placed using jQuery. Images were added to the face of the cards using an array in JavaScript. When the "start game" button is clicked, a for loop is ran causing the array to display in a random order. Using variables and functions in JavaScript and jQuery, matching pairs animate to remain face up while incorrect matches animate back to the card. A function is ran to alert the player when all 10 matching pairs are located, alongside with a timer then increases by 1 every 1000ms.
 
 ##Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+Our project was to build a game using HTML, CSS, JavaScript/jQuery and felt a memory game would be the perfect way to display this. I love wild animals and figured a wild animal safari game would be the perfect route for me to take.
 
 ##Installation
 
-Provide code examples and explanations of how to get the project.
+https://joshellman.github.io/memory-game/ to play the game directly from github page, or download a .zip of this repository and open the index.html inside of your browser.
